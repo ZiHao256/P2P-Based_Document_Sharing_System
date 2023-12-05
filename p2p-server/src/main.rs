@@ -2,7 +2,6 @@ pub mod handlers;
 pub mod assistance;
 pub mod model;
 
-use std::sync::Mutex;
 use actix_cors::Cors;
 use actix_session::{Session, SessionMiddleware, storage::CookieSessionStore};
 use actix_web::{self, web, middleware, HttpResponse};
@@ -12,9 +11,6 @@ use env_logger::Env;
 use log;
 use sqlx;
 use dotenv;
-use crate::assistance::http_response::MyHttpResponse;
-use crate::model::metadata::METADATA;
-use crate::model::user::User;
 
 pub struct AppState{
     pub backend_db: sqlx::SqlitePool

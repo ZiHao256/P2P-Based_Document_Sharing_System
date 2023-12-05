@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/p2p-server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/p2p-client/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p2p-web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p2p-desktop/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
