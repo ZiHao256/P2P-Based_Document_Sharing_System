@@ -56,7 +56,17 @@ async fn show_metadata(session: Session, app_state: web::Data<AppState>) -> Http
     match User::authorized_user(session){
         Ok(user) => {
             let pool = &app_state.backend_db;
-            HttpResponse::Ok().json(user.show_metadata(pool).await)
+            // ZIHAO: 对于有返回数据响应，直接返回数据，无code
+            match user.show_metadata(pool).await {
+                Ok(metadata_vec) => {
+                    return HttpResponse::Ok().json(metadata_vec)
+                },
+                Err(my_error) => {
+                    return my_error.to_http_response();
+                }
+
+            }
+
         },
         Err(http_response) => {
             return http_response;
