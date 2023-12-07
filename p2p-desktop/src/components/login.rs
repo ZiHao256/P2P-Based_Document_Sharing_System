@@ -1,3 +1,4 @@
+use std::process::Command;
 use iced_widget::{column, Column, container, Container};
 use crate::{P2PAppMessage, P2PAppState};
 use crate::components::page;
@@ -32,6 +33,7 @@ pub fn login_view(p2p_app_state: &P2PAppState) -> Element<LoginMessage> {
             )
             .push(
                 iced_widget::text_input("input password", &p2p_app_state.login_state.password)
+                    .password()
                     .on_input(LoginMessage::Password)
                     .padding(10)
                     .width(Length::Fill)

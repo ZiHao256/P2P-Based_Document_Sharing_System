@@ -3046,6 +3046,7 @@ dependencies = [
  "log",
  "serde",
  "sqlx",
+ "tokio",
 ]
 
 [[package]]

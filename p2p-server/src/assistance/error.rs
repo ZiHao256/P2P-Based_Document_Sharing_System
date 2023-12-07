@@ -2,6 +2,7 @@ use actix_session::{Session, SessionInsertError};
 use actix_web::HttpResponse;
 use serde::Serialize;
 use sqlx;
+use crate::assistance::http_response::MyHttpResponse;
 
 #[derive(Serialize)]
 pub enum MyError{
@@ -20,10 +21,14 @@ impl MyError{
     pub fn to_http_response(self) -> HttpResponse{
         match &self {
             MyError::InternalError{code, message} => {
-                HttpResponse::InternalServerError().json(self)
+                HttpResponse::InternalServerError().json(
+                    MyHttpResponse::new(*code, message)
+                )
             },
             MyError::ValidationError {code, message} => {
-                HttpResponse::Unauthorized().json(self)
+                HttpResponse::Unauthorized().json(
+                    MyHttpResponse::new(*code, message)
+                )
             }
         }
     }

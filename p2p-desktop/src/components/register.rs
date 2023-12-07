@@ -38,6 +38,7 @@ pub fn register_view(p2p_app_state: &P2PAppState) -> Element<RegisterMessage> {
                     "input password",
                     &p2p_app_state.register_state.password
                 )
+                    .password()
                     .on_input(RegisterMessage::Password)
                     .padding(10)
                     .width(Length::Fill)
@@ -47,6 +48,7 @@ pub fn register_view(p2p_app_state: &P2PAppState) -> Element<RegisterMessage> {
                     "input confirmed password",
                     &p2p_app_state.register_state.confirmed_password
                 )
+                    .password()
                     .on_input(RegisterMessage::ConfirmedPassword)
                     .padding(10)
                     .width(Length::Fill)
