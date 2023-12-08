@@ -77,7 +77,7 @@ pub async fn download_file(user_name: String, metadata: METADATA) -> Result<Stri
                 local_file.write_all(&buffer[..n]).unwrap();
                 info!("[this host] write {n} Bytes in local file {file_path}");
             }
-            Ok("success".to_string())
+            Ok(file_path)
         },
         Err(e) => {
             Err(MyError::ClientError {
