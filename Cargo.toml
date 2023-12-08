@@ -1,6 +1,5 @@
 [workspace]
 members = [
     "p2p-server",
-    "p2p-web",
     "p2p-desktop"
 ]
