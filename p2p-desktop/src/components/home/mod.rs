@@ -83,6 +83,8 @@ pub fn home_view(app_state: &P2PAppState) -> Element<HomeMessage> {
             .push(
                 child_view
             )
+            .padding(15)
+            .spacing(50)
 
     ).into()
 }

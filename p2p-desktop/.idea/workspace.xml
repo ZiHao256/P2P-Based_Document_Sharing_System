@@ -7,24 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="557f61c0-4742-4ff2-8d92-6d2ef1d0e9bf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/Trunk.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/src/components/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/src/components/video_details.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/src/components/videos_list.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../p2p-web/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/P2P-Based_Document_Sharing_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/P2P-Based_Document_Sharing_System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p2p-client/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p2p-client/src/lib.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p2p-server/src/assistance/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../p2p-server/src/assistance/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../p2p-server/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../p2p-server/src/main.rs" afterDir="false" />
-    </list>
+    <list default="true" id="557f61c0-4742-4ff2-8d92-6d2ef1d0e9bf" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,33 +19,38 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="5kdjv2r3" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Z5Fieiazn5d2qjlcrvq48hvBSr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cargo.Run p2p-desktop.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/zihao/StudyField/github_repositories/P2P-Based_Document_Sharing_System/p2p-desktop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cargo.Cargo.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.RUST_LOG=info.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run p2p-desktop.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.run desktop.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.run.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zihao/StudyField/github_repositories/P2P-Based_Document_Sharing_System/p2p-desktop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Cargo.Run p2p-desktop">
-    <configuration name="Run p2p-desktop" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package p2p-desktop --bin p2p-desktop" />
+}</component>
+  <component name="RunManager" selected="Shell Script.run desktop">
+    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" nameIsGenerated="true">
+      <option name="command" value="run" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -78,57 +66,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run p2p-server" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package p2p-server --bin p2p-server" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
+    <configuration name="run desktop" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
       <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
-    <configuration name="Run p2p-web" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package p2p-web --bin p2p-web" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test p2p-desktop" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="test --workspace" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Cargo.Run" />
+      <item itemvalue="Shell Script.run desktop" />
+    </list>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -142,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701704161068</updated>
       <workItem from="1701704162081" duration="1955000" />
+      <workItem from="1701910274988" duration="34237000" />
     </task>
     <servers />
   </component>

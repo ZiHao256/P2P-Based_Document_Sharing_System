@@ -1,6 +1,7 @@
 use std::fmt::format;
 use iced::{Element, Length};
 use iced_widget::{Column, Container, Row};
+use iced_widget::core::renderer::Style;
 use iced_widget::core::Widget;
 use crate::assistance::error::MyError;
 use crate::assistance::metadata::METADATA;
@@ -30,14 +31,30 @@ pub fn search_view(app_state: &P2PAppState) -> Element<SearchMessage> {
 
     let header_view: Element<SearchMessage> = iced_widget::row(
         vec![
-            iced_widget::text("file name").width(Length::Fill).into(),
-            iced_widget::text("size").width(Length::Fill).into(),
-            iced_widget::text("path").width(Length::Fill).into(),
-            iced_widget::text("user name").width(Length::Fill).into(),
-            iced_widget::text("ip").width(Length::Fill).into(),
-            iced_widget::text("port").width(Length::Fill).into(),
-            iced_widget::text("state").width(Length::Fill).into(),
-            iced_widget::text("operation").width(Length::Fill).into()
+            iced_widget::text("file name")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("size")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("path")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("user name")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("ip")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("port")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("state")
+                .width(Length::Fill)
+                .into(),
+            iced_widget::text("operation")
+                .width(Length::Fill)
+                .into()
         ]
     )
         .into()
@@ -77,28 +94,36 @@ pub fn search_view(app_state: &P2PAppState) -> Element<SearchMessage> {
     Container::new(
         Column::new()
             .push(
-                iced_widget::text_input(
-                    "Enter file name",
-                    &app_state.home_state.search_state.file_name_to_search
+                iced_widget::column(
+                    vec![
+                        iced_widget::text_input(
+                            "Enter file name",
+                            &app_state.home_state.search_state.file_name_to_search
+                        )
+                            .width(Length::Fill)
+                            .on_input(SearchMessage::EnterFileName)
+                            .into(),
+                        iced_widget::button(
+                            "Search"
+                        )
+                            .width(Length::Fill)
+                            .on_press(SearchMessage::SubmitSearch)
+                            .into()
+
+                    ]
                 )
-                    .width(Length::Fill)
-                    .on_input(SearchMessage::EnterFileName)
-            )
-            .push(
-                iced_widget::button(
-                    "Search"
-                )
-                    .width(Length::Fill)
-                    .on_press(SearchMessage::SubmitSearch)
-            )
-            .push(
-                header_view
             )
             .push(
                 iced_widget::column(
-                    metadata_view
+                    vec![
+                        header_view,
+                        iced_widget::column(
+                            metadata_view
+                        ).into()
+                    ]
                 )
             )
+            .spacing(50)
     ).into()
 }
 

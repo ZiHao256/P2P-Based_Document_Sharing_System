@@ -659,8 +659,8 @@ impl Application for P2PAppState {
                                     Ok(file_name) => {
                                         info!("Downloading {file_name}");
                                         Command::perform(
-                                            async {
-                                                "test".to_string()
+                                            async move {
+                                                format!("Download {file_name} successfully!")
                                             },
                                             |message| P2PAppMessage::ShowPopUpMessage(message)
                                         )
